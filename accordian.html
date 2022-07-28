@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: skyblue;
+}
+
+.para{
+  font-size: 30px;
+  font-family: arial;
+  text-align: center;
+  color: blue;
+}
+body{
+  background-color: cyan;
+}
+p{
+
+  font-size: 20px;
+  color: :blue;
+}
+h2{
+  text-align: center;
+  color: orangered;
+  font-size: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>redcherry branches</h2>
+<h2>There are 3 branches in redcherry</h2>
+
+<button class="accordion">Branch 1</button>
+<div class="panel">
+  <h1> Anakapalli</h1>
+  <p> Address of anakapali redcherry branch :House No 14-8-31, Ground Floor, Konathala Complex, Ring Road, Gavarapalem, Anakapalle - 531001, Opposite Union Bank Of India </p>
+  <img src="C:\Users\Sandhya B\Desktop\sandhya\anakapalli.jfif">
+</div>
+
+<button class="accordion">Branch 2</button>
+<div class="panel">
+  <h1>Gajuwaka</h1>
+  <p>Door No 10-1-123, High Way Road, Anakapalli Bus Stop Road, Gajuwaka, Visakhapatnam - 530026, Beside Kotak Mahindra Bank Bakeries ,Cake</p>
+  <img src="C:\Users\Sandhya B\Desktop\sandhya\photored.jfif">
+</div>
+
+<button class="accordion">Branch 3</button>
+<div class="panel">
+  <h1>Visakhapaatnam</h1>
+  <p>Door No 55-7-31/1, National Highway 5, Gajuwaka, Visakhapatnam - 530026, Beside ING Vysya Bank, Venkojipalem Restaurants , Bakeries</p>
+  <img src="C:\Users\Sandhya B\Desktop\sandhya\vizag.jfif">
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>

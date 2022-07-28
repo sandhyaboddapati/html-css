@@ -1,0 +1,90 @@
+body{
+	
+    background-image: url("https://public-assets.typeform.com/public/mega-menu/helpcenter.png");
+
+  /*display: flex;
+  height: 100vh;
+ 
+  align-items: center;*/
+}
+
+
+
+
+
+.survey{
+	color: green;
+	font-family: sans-serif;
+	padding :10px 10px;
+	
+	
+}
+
+.head{
+	color: black;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+textarea{
+color: black;
+font-size: 20px;
+}
+.input{
+	color: white;
+	background-color: green;
+	border-width: 100%;
+	font-size: 10px;
+	width: 20%;
+	padding: 15px 10px;
+
+}
+
+h1{
+	color: darkred;
+	font-size: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+
+}
+/*.submit{
+	color: white;
+	background-color: green;
+	font-size: 25px;*/
+}
+
+
+.login{
+
+	width: 350px;
+	top: 25%;
+	left: 50%;
+	position: relative;
+    padding: 10px 10px;
+}
+
+
+.submit {
+  padding: 0.6em 1.2em;
+  border-radius: 0.25em;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(120deg, darkmagenta, crimson, orange);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position .5s;
+}
+
+.submit:hover {
+  background-position: 0 0;
+}
+
+form{
+
+	max-width: 100%;
+	justify-content: center;
+  text-align: center;
+	padding: 50px 20px;
+	
+}
